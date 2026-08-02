@@ -23,7 +23,7 @@ An end-to-end data analysis project exploring store-level sales, item popularity
 ---
 
 ## 📊 Project Summary
-This project utilizes the dataset of 12,234 McDonald orders for 3 months of 2023 to analyze the overall business, including total revenue, menu sales performance, and customer behaviours, and propose a variety of operational ideas to improve business growth.
+This project uses a dataset of 12,234 McDonald orders from 3 months in 2023 to analyze the overall business, including total revenue, menu sales performance, and customer behaviours, and to propose a variety of operational ideas to improve business growth.
 
 ---
 
@@ -53,22 +53,25 @@ This project utilizes the dataset of 12,234 McDonald orders for 3 months of 2023
 ---
 
 ## 🛠️ Tech Stack & Tools
-- **Data Querying & Aggregation:** SQL (`MySQL` / `PostgreSQL` / `SQLite`)
-- **Data Cleaning & Wrangling:** Python (`Pandas`, `NumPy`)
-- **Data Visualization:** Power BI / Tableau / Matplotlib & Seaborn
-- **Environment:** Jupyter Notebook / VS Code
+- **Data Querying & Aggregation:** SQL (`MySQL`)
+- **Data Visualization:** Power BI 
 
 ---
 
 ## 💡 Key Insights & Findings
+<p align="center">
+<img width="576" height="326" alt="image" src="https://github.com/user-attachments/assets/581c4f91-097a-49e0-b31c-d0b3d2c3ac3d" />
+<img width="575" height="327" alt="image" src="https://github.com/user-attachments/assets/95795fbb-2537-468d-ae15-b7dd08cdb7da" />
+<img width="578" height="329" alt="image" src="https://github.com/user-attachments/assets/15f3b482-b3c0-4879-aeaa-3d77729aa434" />
+<img width="575" height="323" alt="image" src="https://github.com/user-attachments/assets/b3ba91bd-4245-4c66-bbf8-75da99852dc5" />
+<img width="580" height="326" alt="image" src="https://github.com/user-attachments/assets/46ff2eef-f184-47fb-b300-3ac3ae8901d7" />
+</p>
 
-> 💡 *Tip: Insert 1-2 screenshots of your dashboard or visual charts here.*
-
-| Metric / Dimension | Observation | Strategic Takeaway |
+| Dimension | Analysis | Strategic Planning |
 | :--- | :--- | :--- |
-| **Top Category** | Breakfast items contributed **XX%** of morning sales revenue. | Expand morning drive-thru staffing during 7:00 AM – 9:30 AM peak hours. |
-| **Peak Sales Hours** | **12:00 PM – 2:00 PM** experienced the highest transaction velocity. | Pre-stage high-volume value meal ingredients to lower order wait times. |
-| **Average Basket Size** | Transactions with drinks had a **XX%** higher profit margin. | Implement automated upselling prompts at digital kiosks for beverage pairings. |
+| **Overall Sales** | - Total Revenue is $61,003.78.<br>- Total orders are 12,234.<br>- Total Failed Orders are 137, taking up 1.12% of the overall orders.<br>- The cumulative revenue by year and day is, by and large, very steady over the first three months. | - The business has grown steadily over the first three months, which means that any operational modifications are less risky to make.<br>- Orders fail due to many possible reasons: machine errors, shipping complications, payment failures, etc. The number of failed orders is fairly low but still needs more investigation to prevent future loss. |
+| **Menu Performance** | - **Top 5 orders by quantity:** Big Mac, Side Salad, Bulgogi Burger, Quarter Pounder with cheese, French Fries(large).<br>- **Top 5 orders by revenue:** Meatball Marinara, Quarter Pounder with Cheese, Angus Third Pounder, Bulgogi Burger, Big Mac. | - Quarter Pounder with Cheese, Bulgogi Burger, and Big Mac are the top items in terms of both order volume and revenue.<br>- Ensure plenty of ingredients and available staff for these orders to prevent product shortage and maximize profits and customer satisfaction every day.<br>- Feature them prominently on menu and social media, position them as "must-try"/"best-sellers" dishes to encourage repeat orders<br>- Offer premium upgrades like artisanal cheeses or other exotic toppings to justify higher prices, etc.|
+| **Menu Performance** | Burgers, Chicken, Pasta, and Sandwiches are the top four dishes taking up the largest share of revenue, while Breakfast, Shakes, Salad, and Wraps produce the lowest. Meanwhile, Fries and Sides stand in the middle of the list. | - Top-selling items are all entrees, and the remaining are complimentary food. The business can design a variety of food combos to boost sales (e.g., burgers with salads and fries; chicken with shakes and wraps)<br>- Monitor sales, margins, and customer feedback for each top item to better the menu or adjust any side dishes. |
 
 ---
 
