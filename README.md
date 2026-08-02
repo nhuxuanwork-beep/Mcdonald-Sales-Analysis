@@ -14,24 +14,31 @@ An end-to-end data analysis project exploring store-level sales, item popularity
 - [Business Questions Addressed](#-business-questions-addressed)
 - [Dataset Overview](#-dataset-overview)
 - [Tech Stack & Tools](#-tech-stack--tools)
-- [Key Insights & Findings](#-key-insights--findings)
+- [Key Insights & Findings](#-key-insights-findings)
 - [Project Structure](#-project-structure)
-- [How to Run / Reproduce](#-how-to-run--reproduce)
+- [How to Run / Reproduce](#-how-to-run-reproduce)
 - [Future Enhancements](#-future-enhancements)
 - [Contact & Author](#-contact--author)
 
 ---
 
 ## 📊 Project Summary
-This project analyzes a dataset containing transaction records, menu pricing, and order metrics for McDonald's outlets. The primary objective is to evaluate sales trends, identify top-performing product categories (e.g., Breakfast vs. Value Meals), and uncover actionable insights to optimize inventory and operational efficiency during peak revenue hours.
+This project utilizes the dataset of 12,234 McDonald orders for 3 months of 2023 to analyze the overall business, including total revenue, menu sales performance, and customer behaviours, and propose a variety of operational ideas to improve business growth.
 
 ---
 
 ## ❓ Business Questions Addressed
-1. **Product Performance:** Which menu categories generate the highest revenue vs. highest order volume?
-2. **Sales Velocity:** What are the peak order hours and busiest days of the week?
-3. **Price Sensitivity & Basket Size:** What is the average order value (AOV) per transaction?
-4. **Geographic / Store Trends:** How do individual franchise locations compare in total revenue performance?
+1. **Overall Sales:**
+   - What are the total revenue, total orders, and total failed orders?
+2. **Menu Performance:**
+   - What are the top 10 orders by quantity and revenue?
+   - Which food category contributes the largest share of revenue?
+   - What will be the most potential food combos in the future?  
+3. **Customer behaviors:**
+   - What is the average order value (AOV) across all transactions in 3 months?
+   - How many orders does each customer have on average?
+   - What are the peak days and hours?
+   - What is the percentage of orders containing entree(s) that also contain a 'side' and a 'drink'?
 
 ---
 
