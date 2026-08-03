@@ -74,8 +74,10 @@ This project uses a dataset of 12,234 McDonald orders from 3 months in 2023 to a
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
+```LICENSE MIT
+.
 ├── source/                            # Source for the project
 │   └── Source/                         # Original CSV files
 ├── sql/
@@ -85,3 +87,4 @@ This project uses a dataset of 12,234 McDonald orders from 3 months in 2023 to a
 ├── dashboards/
 │   └── mcdonalds_sales_dashboard.pbix  # Power BI dashboard
 └── README.md                           # Project documentation
+```
