@@ -16,9 +16,6 @@ An end-to-end data analysis project exploring store-level sales, item popularity
 - [Tech Stack & Tools](#-tech-stack--tools)
 - [Key Insights & Findings](#-key-insights-findings)
 - [Project Structure](#-project-structure)
-- [How to Run / Reproduce](#-how-to-run-reproduce)
-- [Future Enhancements](#-future-enhancements)
-- [Contact & Author](#-contact--author)
 
 ---
 
@@ -70,25 +67,21 @@ This project uses a dataset of 12,234 McDonald orders from 3 months in 2023 to a
 | Dimension | Analysis | Strategic Planning |
 | :--- | :--- | :--- |
 | **Overall Sales** | - Total Revenue is $61,003.78.<br>- Total orders are 12,234.<br>- Total Failed Orders are 137, taking up 1.12% of the overall orders.<br>- The cumulative revenue by year and day is, by and large, very steady over the first three months. | - The business has grown steadily over the first three months, which means that any operational modifications are less risky to make.<br>- Orders fail due to many possible reasons: machine errors, shipping complications, payment failures, etc. The number of failed orders is fairly low but still needs more investigation to prevent future loss. |
-| **Menu Performance** | - **Top 5 orders by quantity:** Big Mac, Side Salad, Bulgogi Burger, Quarter Pounder with cheese, French Fries(large).<br>- **Top 5 orders by revenue:** Meatball Marinara, Quarter Pounder with Cheese, Angus Third Pounder, Bulgogi Burger, Big Mac. | - Quarter Pounder with Cheese, Bulgogi Burger, and Big Mac are the top items in terms of both order volume and revenue.<br>- Ensure plenty of ingredients and available staff for these orders to prevent product shortage and maximize profits and customer satisfaction every day.<br>- Feature them prominently on menu and social media, position them as "must-try"/"best-sellers" dishes to encourage repeat orders<br>- Offer premium upgrades like artisanal cheeses or other exotic toppings to justify higher prices, etc.|
-| **Menu Performance** | Burgers, Chicken, Pasta, and Sandwiches are the top four dishes taking up the largest share of revenue, while Breakfast, Shakes, Salad, and Wraps produce the lowest. Meanwhile, Fries and Sides stand in the middle of the list. | - Top-selling items are all entrees, and the remaining are complimentary food. The business can design a variety of food combos to boost sales (e.g., burgers with salads and fries; chicken with shakes and wraps)<br>- Monitor sales, margins, and customer feedback for each top item to better the menu or adjust any side dishes. |
+| **Menu Performance** | - **Top 5 orders by quantity:** Big Mac, Side Salad, Bulgogi Burger, Quarter Pounder with cheese, French Fries(large).<br>- **Top 5 orders by revenue:** Meatball Marinara, Quarter Pounder with Cheese, Angus Third Pounder, Bulgogi Burger, Big Mac. | - Quarter Pounder with Cheese, Bulgogi Burger, and Big Mac are the top items by both order volume and revenue.<br>- Ensure plenty of ingredients and available staff for these orders to prevent product shortage and maximize profits and customer satisfaction every day.<br>- Feature them prominently on menu and social media, position them as "must-try"/"best-sellers" dishes to encourage repeat orders<br>- Offer premium upgrades like artisanal cheeses or other exotic toppings to justify higher prices, etc.|
+| **Menu Performance** | Burgers, Chicken, Pasta, and Sandwiches are the top four dishes taking up the largest share of revenue, while Breakfast, Shakes, Salad, and Wraps produce the lowest. Meanwhile, Fries and Sides stand in the middle of the list. | - Top-selling items are all entrees, and the remaining are complimentary food. The business can design a variety of food combos to boost sales (e.g., burgers with salads and fries; chicken with shakes and wraps). <br>- Monitor sales, margins, and customer feedback for each top item to improve the menu. |
+| **Menu Performance** | Identify a variety of combos along with each item's sales data. For example, (131) Chicken Parm Sandwich and (132) Veggie Deluxe go well with each other since 100% of people who ordered 132 also ordered 131 (while the reverse is not true), which means that this combo is highly likely to be sold at a profit. | To identify potential food combos that represent the top food trending among the customers, as well as the market demand for them.
+| **Customer Behaviours** | Average order value is $5.04 per order. The peak day and hour are Monday and 12, respectively. Each person orders 2 items at once on average. 4% of the total orders, including the entrée, also contain the sides and shakes | - Increase AOV through combo meals, upselling fries/drinks, or limited-time bundles.<br>- Schedule more staff, ensure inventory is stocked on Monday, especially at lunch, to maximize revenue. Create meal deals that bundle an entrée, fries, and a shake at a slight discount, or promote shakes with combo meals.
 
 ---
 
 ## 📂 Project Structure
 
-```text
-├── data/
-│   ├── raw/                 # Original CSV files
-│   └── processed/           # Cleaned datasets ready for analysis
-├── notebooks/
-│   └── eda_sales_analysis.ipynb   # Exploratory Data Analysis in Python
-├── sql/
-│   ├── 01_data_cleaning.sql       # Cleaning & transformation scripts
-│   └── 02_sales_queries.sql       # Analytical SQL queries
+├── source                         # Source for the project
+│   ├── Source (dataset overview)  # Original CSV files
+├── sql
+│   ├── 01_Overall_Sales       
+│   └── 02_Menu_Performance       # Coding
+|   └── 03_Customer_behavours
 ├── dashboards/
-│   └── mcdonalds_sales_dashboard.pbix # Power BI / Tableau workbook
-├── assets/
-│   └── dashboard_preview.png      # Screenshot for README
+│   └── mcdonalds_sales_dashboard # Power BI 
 ├── README.md                # Project documentation
-└── requirements.txt         # Python dependencies
