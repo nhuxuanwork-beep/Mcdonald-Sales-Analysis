@@ -76,12 +76,12 @@ This project uses a dataset of 12,234 McDonald orders from 3 months in 2023 to a
 
 ## 📂 Project Structure
 
-├── source                         # Source for the project
-│   ├── Source (dataset overview)  # Original CSV files
-├── sql
-│   ├── 01_Overall_Sales       
-│   └── 02_Menu_Performance       # Coding
-|   └── 03_Customer_behavours
+├── source/                            # Source for the project
+│   └── Source/                         # Original CSV files
+├── sql/
+│   ├── 01_Overall_Sales.sql            # Overall sales analysis
+│   ├── 02_Menu_Performance.sql         # Menu performance analysis
+│   └── 03_Customer_Behaviours.sql      # Customer behavior analysis
 ├── dashboards/
-│   └── mcdonalds_sales_dashboard # Power BI 
-├── README.md                # Project documentation
+│   └── mcdonalds_sales_dashboard.pbix  # Power BI dashboard
+└── README.md                           # Project documentation
